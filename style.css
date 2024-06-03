@@ -1,0 +1,560 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#nav{
+    background-color: #D6E5FA;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 15px rgba(0,0, 0, 0.6px);
+    z-index: 999;
+   
+    
+}
+.logo{
+    width: 60px;
+    height: 60px;
+   
+}
+.navbar{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  padding: 5px 10px;
+}
+.list ul{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+   
+}
+.list ul li{
+    list-style: none;
+    margin: 0 30px;
+    
+}
+.list ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    position: relative;
+   
+}
+.list ul li a:hover{
+    color: #24A19C;
+}
+.list ul li a.active::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #24A19C;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+.list ul li a.active{
+    color: #24A19C;
+}
+.list ul li a:hover::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #24A19C;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+/* ---------------------------------------------------------------- */
+#main{
+    background-image: url(main.jpg);
+    width: 100%;
+    height: 87vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+}
+.text{
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    
+}
+.imgg p{
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    font-size: large;
+}
+.text h1{
+    font-size: xxx-large;
+    color: #24A19C;
+    margin: 5px 0;
+}
+.text h2{
+    font-size: xx-large;
+}
+.text h4{
+    font-size: large;
+}
+.text p{
+    margin-bottom: 10px;
+    color: red;
+}
+.text button{
+    background: transparent;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-style: italic;
+    font-weight: bolder;
+    transition: background 0.5s,transfrom 0.5s;
+}
+.text button:hover{
+    background-color: #24A19C;
+    transform: scale(1.1);
+}
+
+/* ----------------------------------------------------------------------- */
+.fe-img{
+    width: 150px;
+
+}
+.fe-img1,.fe-img2{
+    width: 130px;
+}
+.fe-img3{
+    width: 155px;
+}
+#feachers{
+    padding: 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fe-box{
+    padding: 10px;
+    width: 170px;
+    text-align: center;
+    border: 1px solid #D6E5FA;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+}
+.fe-box p{
+ 
+   padding: 5px;
+    width: 100px;
+    margin-left: 18%;
+    background-color: #E1AFD1;
+}
+.fe-box:nth-child(2) p
+{
+    background-color: #D6E5FA;
+}
+.fe-box:nth-child(3) p{
+    background-color: #F1FADA;
+}
+.fe-box:nth-child(4) p{
+    background-color: #FFF3CF;
+}
+.fe-box:nth-child(5) p{
+    background-color: #F7B787;
+}
+
+#feachers .fe-box:hover{
+    box-shadow: 10px 10px 70px rgba(0, 0, 0, 0.1);
+}
+/* ------------------------------------------------------ */
+.heading{
+    text-align: center;
+    margin: 10px 0;
+}
+.heading h1{
+    color: #24A19C;
+}
+.p-img{
+    width: 250px;
+}
+#products{
+    text-align: center;
+    padding: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.pro-container{
+    width: 250px;
+    height: 320px;
+    border: 1px solid #D6E5FA;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    position: relative;
+   border-radius: 8px;
+   overflow: hidden;
+   transition: 0.3s;
+}
+.pro-container:hover{
+    transform: scale(1.1);
+}
+
+.p-details{
+    padding:0 7px ;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.p-details h3{
+    font-weight: lighter;
+    color: #24A19C;
+    margin-bottom: 5px;
+}
+.star i{
+    color: #FFC94A;
+    margin-bottom: 5px;
+}
+
+.cart i{
+   background-color: #D6E5FA;
+   width: 30px;
+   height: 30px;
+  line-height: 30px;
+   border-radius: 50%;
+   position: absolute;
+   top: 87%;
+   left: 80%;
+    
+}
+.cart i:hover{
+    background-color: #24A19C;
+}
+
+/* ------------------------------------------------------------------------------- */
+#banner{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 40vh;
+    background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/8324.png);
+    background-size: cover;
+}
+#banner span{
+    color: red;
+}
+#banner h4{
+    margin: 5px 0;
+}
+#banner h1{
+    margin: 5px 0;
+}
+#banner button{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+#banner button:hover{
+    background-color: #24A19C;
+    color: white;
+    transform: scale(1.1);
+}
+/* --------------------------------------------------------------------- */
+.heading1{
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+.heading1 h1{
+    color: #24A19C;
+}
+/* -------------------------------------------------- */
+#sm-banner{
+    padding: 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.small-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/278/794/438/simple-blue-background-wallpaper-preview.jpg);
+    width: 50%;
+    height: 60vh;
+    margin-right: 25px;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 2px 10px black;
+
+}
+.small-banner h1{
+    margin: 10px;
+}
+.small-banner1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url(https://img.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-9614.jpg);
+    width: 50%;
+    height: 53vh;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 2px 10px black;
+
+}
+.small-banner button,.small-banner1 button{
+    background: transparent;
+    border: 1px white solid;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+}
+.small-banner button:hover,.small-banner1 button:hover{
+  background-color: #24A19C;
+  border: none;
+  outline: none;
+}
+.small-banner1 h1{
+    margin: 10px;
+}
+/* ------------------------------------------------------------------- */
+#banner-3{
+    padding: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+}
+.b3{
+    background-color: #D6E5FA;
+   width: 370px;
+   height: 35vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   transition: 0.5s;
+   
+}
+.box-1{
+    background-image: url(https://t4.ftcdn.net/jpg/05/05/84/01/360_F_505840152_BmLvYvhhYY9qddSadhyzHfKHHqZrAcsa.jpg);
+   background-size: cover;
+   background-position: center;
+}
+.box-2{
+    background-image: url(https://sulaym.co.uk/cdn/shop/collections/2023006_SU_OudOils.jpg?v=1696611280);
+    background-position: center;
+    background-size: cover;
+}
+.box-3{
+    background-image: url(https://www.attarperfume.com/wp-content/uploads/2023/10/black-musk-attar.webp);
+    background-size: cover;
+    background-position: center;
+}
+.b3 h1{
+   margin: 10px 0;
+   color: white;
+}
+.b3 h4{
+    color: red;
+}
+.b3:hover{
+    transform: translateY(-7px);
+}
+/* ----------------------------------------------------------------------- */
+#news{
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(https://t4.ftcdn.net/jpg/01/97/92/77/360_F_197927767_MISwwnukYrfEH7BoyWazNXLS2p32Plcb.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+.news-letter{
+    color: white;
+}
+.news-letter span{
+    color: #24A19C;
+}
+.form input{
+    padding-left: 5px;
+    width: 300px;
+    height: 55px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    outline: none;
+
+}
+.form{
+    display: flex;
+}
+
+.form button{
+    width: 100px;
+    padding: 19px;
+    background-color: #24A19C;
+    border: 1px solid transparent;
+    color: white;
+}
+/* ---------------------------------------------------------------------- */
+.app-img{
+    width: 100px;
+    object-fit: contain;
+}
+.payment{
+    width: 200px;
+    object-fit: contain;
+}
+footer{
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+footer h3{
+    margin-bottom: 10px;
+}
+.social-media i{
+    margin-top: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.social-media i:hover{
+    color: #24A19C;
+}
+footer a{
+  text-decoration: none;
+  color: black;
+  
+}
+footer a:hover{
+    color: #24A19C;
+}
+.col-2,.col-3{
+    display: flex;
+    flex-direction: column;
+}
+/* ------------------------------------------------ */
+#copyrigth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    margin-bottom: 10px
+}
+
+
+/* ----------------------------------------------------------------------- */
+/* shoppage */
+#shop-header{
+    background-image: url(https://www.hdwallpapers.in/download/designed_art_black_background_hd_black-HD.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#shop-header h1{
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+#page-slider{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    
+}
+#page-slider a{
+    text-decoration: none;
+    color: black;
+    background-color: #24A19C;
+    margin: 5px;
+    padding: 10px;
+    width: 20px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+}
+/* ----------------------------------------------------------------
+shopproduct */
+#product-details{
+    padding: 30px 30px;
+    display: flex;
+}
+.big-img img{
+    width: 400px;
+    height: 400px;
+}
+.big-img{
+    border: 1px solid #D6E5FA;
+    border-radius: 5px;
+    width: 40%;
+    margin-right: 40px;
+    
+}
+.detail{
+    width: 50%;
+    margin-top: 30px;
+}
+.detail h4{
+    margin-bottom: 20px;
+}
+.detail h2{
+    margin-bottom: 10px;
+}
+.detail select{
+    outline: none;
+    margin-bottom: 10px;
+}
+.detail input{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    outline: none;
+    margin-right: 10px;
+    
+}
+.detail button{
+    background: transparent;
+    background-color: #24A19C;
+    border: none;
+    padding: 10px;
+    width: 120px;
+    border-radius: 3px;
+}
+.detail h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
